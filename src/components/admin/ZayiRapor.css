@@ -1,0 +1,34 @@
+.zayi-rapor-container {
+    padding: 20px;
+    max-width: calc(100vw - 250px); /* Sidebar genişliğini çıkarttık */
+    margin-left: 250px; /* Sidebar genişliği kadar sol boşluk bıraktık */
+}
+  
+  .zayi-rapor-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .excel-table-section {
+    overflow-x: auto;
+  }
+  
+  .excel-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .excel-table th,
+  .excel-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .excel-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }

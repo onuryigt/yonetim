@@ -1,0 +1,54 @@
+.elemanlar-container {
+    padding: 20px;
+    max-width: calc(100vw - 250px); /* Sidebar genişliğini çıkarttık */
+    margin-left: 250px; /* Sidebar genişliği kadar sol boşluk bıraktık */
+  }
+  
+  .elemanlar-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-section label {
+    margin-right: 10px;
+  }
+  
+  .filter-section select {
+    margin-right: 10px;
+  }
+  
+  .employees-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .employees-table th,
+  .employees-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .edit-form {
+    margin-top: 20px;
+  }
+  
+  .edit-form label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .edit-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .edit-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+  }

@@ -1,0 +1,75 @@
+.shift-rapor-container {
+    padding: 20px;
+    max-width: calc(100vw - 250px); /* Sidebar genişliğini çıkarttık */
+    margin-left: 250px; /* Sidebar genişliği kadar sol boşluk bıraktık */
+  }
+  
+  .shift-rapor-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .filter-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-section label {
+    margin-right: 10px;
+  }
+  
+  .filter-section select {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .filter-section button {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .weeks-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .weeks-section li {
+    margin: 5px 0;
+  }
+  
+  .weeks-section button {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .shifts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .shifts-table th,
+  .shifts-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .shifts-table th {
+    background-color: #f8f9fa;
+  }
+  
+  .shifts-table td div {
+    margin: 5px 0;
+  }
