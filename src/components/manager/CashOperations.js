@@ -31,7 +31,7 @@ const CashOperations = () => {
     // Tüm müdürleri yükle
     const fetchManagers = async () => {
       try {
-        const response = await axios.get('http://92.112.193.8:5018/managerss');
+        const response = await axios.get('http://92.112.193.81:5018/managerss');
         setManagers(response.data);
       } catch (error) {
         console.error('Müdürler yüklenemedi', error);
@@ -106,7 +106,7 @@ const CashOperations = () => {
     } = formData;
 
     try {
-      const response = await axios.post('http://92.112.193.8:5018/cash-operations', {
+      const response = await axios.post('http://92.112.193.81:5018/cash-operations', {
         ...formData,
         posRevenue: parseFloat(posRevenue || 0),
         ysRevenue: parseFloat(ysRevenue || 0),

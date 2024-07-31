@@ -17,7 +17,7 @@ const CiroRapor = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://92.112.193.8:5018/api/cash-operations');
+        const response = await axios.get('http://92.112.193.81:5018/api/cash-operations');
         console.log('Fetched data:', response.data.data);
         setData(response.data.data);
       } catch (error) {
@@ -27,7 +27,7 @@ const CiroRapor = () => {
 
     const fetchManagers = async () => {
       try {
-        const response = await axios.get('http://92.112.193.8:5018/managers');
+        const response = await axios.get('http://92.112.193.81:5018/managers');
         if (response.data.success) {
           setManagers(response.data.managers);
         } else {

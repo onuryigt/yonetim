@@ -15,7 +15,7 @@ const EmployeeOperations = () => {
       try {
         const user = JSON.parse(localStorage.getItem('user'));
         const managerId = user.id; // Giriş yapan yöneticinin ID'si
-        const response = await axios.get(`http://92.112.193.8:5018/get-employees?managerId=${managerId}`);
+        const response = await axios.get(`http://92.112.193.81:5018/get-employees?managerId=${managerId}`);
         setEmployees(response.data);
       } catch (error) {
         console.error('Mevcut elemanları çekerken hata oluştu:', error);
@@ -30,7 +30,7 @@ const EmployeeOperations = () => {
     try {
       const user = JSON.parse(localStorage.getItem('user'));
       const managerId = user.id; // Giriş yapan yöneticinin ID'si
-      const response = await axios.post('http://92.112.193.8:5018/employee-operations', {
+      const response = await axios.post('http://92.112.193.81:5018/employee-operations', {
         firstName,
         lastName,
         phone,

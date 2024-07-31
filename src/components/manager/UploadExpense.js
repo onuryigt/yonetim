@@ -11,7 +11,7 @@ const UploadExpense = () => {
     formData.append('expenseFile', expenseFile);
 
     try {
-      const response = await axios.post('http://92.112.193.8:5018/expense-report', formData, {
+      const response = await axios.post('http://92.112.193.81:5018/expense-report', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

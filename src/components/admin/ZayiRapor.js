@@ -11,7 +11,7 @@ const ZayiRapor = () => {
   useEffect(() => {
     const fetchFiles = async () => {
       try {
-        const response = await axios.get('http://92.112.193.8:5018/api/zayi-files');
+        const response = await axios.get('http://92.112.193.81:5018/api/zayi-files');
         setFiles(response.data);
       } catch (error) {
         console.error('Error fetching files:', error);
@@ -26,7 +26,7 @@ const ZayiRapor = () => {
     setSelectedFile(filename);
     if (filename) {
       try {
-        const response = await axios.get(`http://92.112.193.8:5018/api/zayi-excel/${filename}`);
+        const response = await axios.get(`http://92.112.193.81:5018/api/zayi-excel/${filename}`);
         setExcelData(response.data);
       } catch (error) {
         console.error('Error fetching Excel data:', error);

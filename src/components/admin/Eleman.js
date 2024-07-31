@@ -19,7 +19,7 @@ const Elemanlar = () => {
   useEffect(() => {
     const fetchBusinesses = async () => {
       try {
-        const response = await axios.get('http://92.112.193.8:5018/api/managers');
+        const response = await axios.get('http://92.112.193.81:5018/api/managers');
         setBusinesses(response.data);
       } catch (error) {
         console.error('Error fetching businesses:', error);
@@ -36,7 +36,7 @@ const Elemanlar = () => {
     }
 
     try {
-      const response = await axios.get('http://92.112.193.8:5018/get-employees', {
+      const response = await axios.get('http://92.112.193.81:5018/get-employees', {
         params: {
           managerId: selectedBusiness,
         },
@@ -60,7 +60,7 @@ const Elemanlar = () => {
 
   const handleSaveEmployee = async () => {
     try {
-      await axios.put(`http://92.112.193.8:5018/api/update-employee/${editingEmployee}`, employeeForm);
+      await axios.put(`http://92.112.193.81:5018/api/update-employee/${editingEmployee}`, employeeForm);
       setEditingEmployee(null);
       handleFetchEmployees();
     } catch (error) {

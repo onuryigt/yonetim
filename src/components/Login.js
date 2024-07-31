@@ -22,7 +22,7 @@ const Login = () => {
      }
 
      try {
-      const response = await axios.post('http://92.112.193.8:5018/login', { email, password });
+      const response = await axios.post('http://92.112.193.81:5018/login', { email, password });
       if (response.data.success) {
         localStorage.setItem('user', JSON.stringify(response.data.user));
         localStorage.setItem('business_name', response.data.business_name);

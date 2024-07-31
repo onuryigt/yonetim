@@ -10,7 +10,7 @@ const InvoiceEntry = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://92.112.193.8:5018/invoice-entry', {
+      const response = await axios.post('http://92.112.193.81:5018/invoice-entry', {
         invoiceNumber,
         amount,
         date,

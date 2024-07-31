@@ -23,7 +23,7 @@ const ShiftRapor = () => {
   useEffect(() => {
     const fetchBusinesses = async () => {
       try {
-        const response = await axios.get('http://92.112.193.8:5018/api/managers');
+        const response = await axios.get('http://92.112.193.81:5018/api/managers');
         setBusinesses(response.data);
       } catch (error) {
         console.error('Error fetching businesses:', error);
@@ -40,7 +40,7 @@ const ShiftRapor = () => {
     }
 
     try {
-      const response = await axios.get('http://92.112.193.8:5018/api/shifts', {
+      const response = await axios.get('http://92.112.193.81:5018/api/shifts', {
         params: {
           managerId: selectedBusiness,
           week: selectedWeek,
@@ -69,7 +69,7 @@ const ShiftRapor = () => {
 
   const handleSave = async () => {
     try {
-      await axios.put('http://92.112.193.8:5018/api/updateShifts', { shifts });
+      await axios.put('http://92.112.193.81:5018/api/updateShifts', { shifts });
       alert('Veriler başarıyla kaydedildi!');
     } catch (error) {
       console.error('Veriler kaydedilirken hata oluştu:', error);

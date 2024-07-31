@@ -8,7 +8,7 @@ const CreateInvoice = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://92.112.193.8:5018/create-invoice', {
+      const response = await axios.post('http://92.112.193.81:5018/create-invoice', {
         invoiceDetails,
       });
       alert(response.data);

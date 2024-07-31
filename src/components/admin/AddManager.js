@@ -19,7 +19,7 @@ const AddManager = () => {
 
   const fetchManagers = async () => {
     try {
-      const response = await axios.get('http://92.112.193.8:5018/managers');
+      const response = await axios.get('http://92.112.193.81:5018/managers');
       setManagers(response.data.managers);
     } catch (error) {
       console.error('Müdürleri getirirken hata:', error);
@@ -37,7 +37,7 @@ const AddManager = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://92.112.193.8:5018/add-manager', formData);
+      const response = await axios.post('http://92.112.193.81:5018/add-manager', formData);
       alert(response.data.message);
       setFormData({
         first_name: '',

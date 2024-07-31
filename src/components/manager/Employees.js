@@ -8,7 +8,7 @@ const Employees = ({ managerId }) => {
   useEffect(() => {
     const fetchEmployees = async () => {
       try {
-        const response = await axios.get('http://92.112.193.8:5018/employees', {
+        const response = await axios.get('http://92.112.193.81:5018/employees', {
           params: { managerId }
         });
         setEmployees(response.data);

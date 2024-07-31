@@ -11,7 +11,7 @@ const StockOperations = () => {
     formData.append('stockFile', stockFile);
 
     try {
-      const response = await axios.post('http://92.112.193.8:5018/stock-report', formData, {
+      const response = await axios.post('http://92.112.193.81:5018/stock-report', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

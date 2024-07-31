@@ -14,7 +14,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchBusinesses = async () => {
       try {
-        const response = await axios.get('http://92.112.193.8:5018/api/managers');
+        const response = await axios.get('http://92.112.193.81:5018/api/managers');
         setBusinesses(response.data);
         if (response.data.length > 0) {
           startRotatingCiro(response.data);
@@ -40,7 +40,7 @@ const Dashboard = () => {
 
   const handleFetchLatestCashOperation = async (managerId, isRotating = false) => {
     try {
-      const response = await axios.get('http://92.112.193.8:5018/api/cash-operations', {
+      const response = await axios.get('http://92.112.193.81:5018/api/cash-operations', {
         params: { managerId: managerId },
       });
       const latestOperation = response.data.data[0];
@@ -64,7 +64,7 @@ const Dashboard = () => {
     try {
       const operations = {};
       for (const business of businesses) {
-        const response = await axios.get('http://92.112.193.8:5018/api/cash-operations', {
+        const response = await axios.get('http://92.112.193.81:5018/api/cash-operations', {
           params: { managerId: business.id },
         });
         const latestOperation = response.data.data[0];

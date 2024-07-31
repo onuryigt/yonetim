@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(express.static('uploads'));
 
 const db = mysql.createConnection({
-  host: '92.112.193.81',
+  host: '92.112.193.811',
   user: 'root',
   password: 'Onur12404545?',
   database: 'restaurant_management',

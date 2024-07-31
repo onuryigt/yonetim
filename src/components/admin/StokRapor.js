@@ -11,7 +11,7 @@ const StockReport = () => {
     useEffect(() => {
         const fetchExcelFiles = async () => {
             try {
-                const response = await axios.get('http://92.112.193.8:5018/api/excel-files');
+                const response = await axios.get('http://92.112.193.81:5018/api/excel-files');
                 setExcelFiles(response.data);
             } catch (error) {
                 console.error('Error fetching excel files:', error);
@@ -26,7 +26,7 @@ const StockReport = () => {
         setSelectedFile(fileName);
         if (fileName) {
             try {
-                const response = await axios.get(`http://92.112.193.8:5018/api/excel-file/${fileName}`);
+                const response = await axios.get(`http://92.112.193.81:5018/api/excel-file/${fileName}`);
                 setExcelData(response.data);
             } catch (error) {
                 console.error('Error fetching excel file data:', error);

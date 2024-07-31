@@ -14,7 +14,7 @@ const Attendance = () => {
       try {
         const user = JSON.parse(localStorage.getItem('user'));
         const managerId = user.id;
-        const response = await axios.get(`http://92.112.193.8:5018/get-employees?managerId=${managerId}`);
+        const response = await axios.get(`http://92.112.193.81:5018/get-employees?managerId=${managerId}`);
         setEmployeeList(response.data);
       } catch (error) {
         console.error('Çalışanlar alınırken hata oluştu:', error);
@@ -28,7 +28,7 @@ const Attendance = () => {
     try {
       const user = JSON.parse(localStorage.getItem('user'));
       const managerId = user.id;
-      await axios.post('http://92.112.193.8:5018/add-attendance', {
+      await axios.post('http://92.112.193.81:5018/add-attendance', {
         employee_id: selectedEmployee,
         date,
         hours_worked: hoursWorked,
