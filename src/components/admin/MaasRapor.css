@@ -1,0 +1,81 @@
+.maas-rapor-container {
+    padding: 20px;
+    max-width: calc(100vw - 250px); /* Sidebar genişliğini çıkarttık */
+    margin-left: 250px; /* Sidebar genişliği kadar sol boşluk bıraktık */
+}
+  
+  .maas-rapor-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .filter-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .salary-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .salary-table th, .salary-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .salary-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .salary-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .salary-details {
+    margin-top: 20px;
+  }
+  
+  .salary-details h2 {
+    margin-bottom: 10px;
+  }
+  
+  .daily-hours {
+    margin-top: 10px;
+  }
+  
+  .daily-hours table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .daily-hours th, .daily-hours td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .daily-hours th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .daily-hours tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }

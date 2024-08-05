@@ -1,0 +1,43 @@
+.sidebar {
+  height: 100vh; /* Tam ekran yüksekliği */
+  width: 250px; /* Sidebar genişliği */
+  position: fixed; /* Sabit pozisyon */
+  top: 0;
+  left: 0;
+  background-color: #2E3B4E; /* Arka plan rengi */
+  padding-top: 20px; /* Üstten boşluk */
+}
+
+.sidebar ul {
+  list-style-type: none; /* Liste işaretlerini kaldır */
+  padding: 0; /* İç boşlukları kaldır */
+}
+
+.sidebar ul li {
+  padding: 15px 20px; /* İçerik boşlukları */
+  text-align: left; /* Metni sola hizala */
+  font-size: 18px; /* Yazı boyutu */
+  color: #fff; /* Yazı rengi */
+  cursor: pointer; /* İşaretçi */
+}
+
+.sidebar ul li:hover {
+  background-color: #4F5B69; /* Üzerine gelince arka plan rengi değişsin */
+}
+
+.user-info {
+  text-align: center; /* Kullanıcı bilgilerini ortala */
+  margin-bottom: 30px; /* Alt boşluk */
+}
+
+.user-avatar {
+  border-radius: 50%; /* Yuvarlak avatar */
+  width: 80px; /* Avatar genişliği */
+  height: 80px; /* Avatar yüksekliği */
+  margin-bottom: 10px; /* Alt boşluk */
+}
+
+.user-name {
+  font-size: 20px; /* Yazı boyutu */
+  color: #fff; /* Yazı rengi */
+}

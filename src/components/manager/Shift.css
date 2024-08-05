@@ -1,0 +1,19 @@
+.shift-table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .shift-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .shift-table th, .shift-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .shift-table th {
+    background-color: #f2f2f2;
+  }
