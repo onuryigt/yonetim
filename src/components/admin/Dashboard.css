@@ -77,9 +77,7 @@
   .business-button:hover {
 <<<<<<< HEAD
     background-color: #000000;
-=======
     background-color: #0056b3;
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
   }
   
   .cash-details {
@@ -117,7 +115,6 @@ background: linear-gradient(225deg, #A1369F, #E64E47);
   .card.gunSonu {
 background: #D0DC79;
 background: linear-gradient(225deg, #D0DC79, #56A155);
-=======
     background: linear-gradient(135deg, #1e90ff, #00bfff);
   }
   
@@ -131,5 +128,4 @@ background: linear-gradient(225deg, #D0DC79, #56A155);
   
   .card.gunSonu {
     background: linear-gradient(135deg, #ff69b4, #ff1493);
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
   }

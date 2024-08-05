@@ -14,8 +14,6 @@ const Sidebar = () => {
 <<<<<<< HEAD
     
 
-=======
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
     return (
         <div className="sidebar">
             {user && (

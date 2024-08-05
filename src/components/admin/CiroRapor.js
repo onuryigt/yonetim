@@ -5,9 +5,7 @@ import axios from 'axios';
 import 'chart.js/auto';
 <<<<<<< HEAD
   // DashboardSidebar bileşenini ekledik
-=======
 import DashboardSidebar from './DashboardSidebar'; // DashboardSidebar bileşenini ekledik
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
 
 const CiroRapor = () => {
   const [startDate, setStartDate] = useState('');
@@ -66,9 +64,7 @@ const CiroRapor = () => {
     if (!data || !Array.isArray(data)) return [];
 <<<<<<< HEAD
   
-=======
 
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
     const filteredData = data.filter((item) => {
       const itemDate = new Date(item.date);
       const isWithinDateRange =
@@ -80,9 +76,7 @@ const CiroRapor = () => {
     });
 <<<<<<< HEAD
   
-=======
 
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
     const groupedData = filteredData.reduce((acc, item) => {
       const date = item.date.split('T')[0]; // Sadece tarihi alın
       if (!acc[date]) acc[date] = {};
@@ -93,10 +87,8 @@ const CiroRapor = () => {
   
     // Tarihleri sıralayın ve doğru şekilde formatlayın
     const labels = Object.keys(groupedData).sort((a, b) => new Date(a) - new Date(b));
-=======
 
     const labels = Object.keys(groupedData);
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
     const datasets = managers.map((manager) => ({
       label: manager.business_name,
       data: labels.map((date) => groupedData[date][manager.id] || 0),
@@ -112,12 +104,10 @@ const CiroRapor = () => {
     return { labels, datasets };
   };
   
-=======
 
     return { labels, datasets };
   };
 
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
   const handleGenerateChart = () => {
     const { labels, datasets } = filterAndMapData();
     setChartData({
@@ -130,12 +120,10 @@ const CiroRapor = () => {
   // Component render kısmı
   return (
     <div style={{ display: 'flex' }}>
-=======
 
   return (
     <div style={{ display: 'flex' }}>
       <DashboardSidebar /> {/* DashboardSidebar'ı burada kullanıyoruz */}
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
       <Container style={{ marginLeft: '240px' }}>
         <Typography variant="h4" gutterBottom>
           Ciro Raporu

@@ -77,7 +77,6 @@
 .sidebar ul li.logout:hover {
   background-color: #c82333;
 }
-=======
     height: 100vh;
     width: 250px;
     position: fixed;
@@ -152,4 +151,3 @@
     font-size: 1.2em;
     text-align: center;
   }
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f

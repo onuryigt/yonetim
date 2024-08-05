@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 <<<<<<< HEAD
  
-=======
 import DashboardSidebar from './DashboardSidebar';
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
 import './HarcamaRapor.css';
 
 const HarcamaRapor = () => {
@@ -43,9 +41,7 @@ const HarcamaRapor = () => {
   return (
     <div className="harcama-rapor-container">
 <<<<<<< HEAD
-=======
       <DashboardSidebar />
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
       <div className="harcama-rapor-content">
         <h1>Harcama Raporu</h1>
         <div className="filter-section">

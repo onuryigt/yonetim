@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 <<<<<<< HEAD
  
-=======
 import DashboardSidebar from './DashboardSidebar';
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
 import './ZayiRapor.css';
 
 const ZayiRapor = () => {
@@ -43,9 +41,7 @@ const ZayiRapor = () => {
   return (
     <div className="zayi-rapor-container">
 <<<<<<< HEAD
-=======
       <DashboardSidebar />
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
       <div className="zayi-rapor-content">
         <h1>Zayi Raporu</h1>
         <div className="filter-section">

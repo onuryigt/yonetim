@@ -11,13 +11,11 @@ import Shift from './components/manager/Shift';
 import InvoiceEntry from './components/manager/InvoiceEntry';
 <<<<<<< HEAD
 import Dashboard from './components/admin/Dashboard';
-=======
 import Sidebar from './components/Sidebar';
 import './components/Sidebar.css';
 import './global.css';
 import Dashboard from './components/admin/Dashboard';
 import './components/admin/Dashboard.css';
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
 import CiroRapor from './components/admin/CiroRapor';
 import ShiftRapor from './components/admin/ShiftRapor';
 import Eleman from './components/admin/Eleman';
@@ -30,8 +28,6 @@ import Analiz from './components/admin/Analiz';
 import AddManager from './components/admin/AddManager';
 <<<<<<< HEAD
 import Layout from './components/Layout'; // Layout bileşenini import edin
-=======
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
 
 const App = () => {
   const user = JSON.parse(localStorage.getItem('user'));
@@ -44,12 +40,10 @@ const App = () => {
         <Route
           element={<Layout />}
         >
-=======
       <div className="app">
         {user && window.location.pathname !== '/login' && <Sidebar />}
         <Routes>
           <Route path="/login" element={<Login />} />
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
           <Route path="/cash-operations" element={<CashOperations />} />
           <Route path="/upload-expense" element={<UploadExpense />} />
           <Route path="/employee-operations" element={<EmployeeOperations />} />
@@ -73,11 +67,9 @@ const App = () => {
           <Route path="/" element={<Navigate to={user ? "/dashboard" : "/login"} />} />
         </Route>
       </Routes>
-=======
           <Route path="/" element={<Navigate to="/login" />} />
         </Routes>
       </div>
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
     </Router>
   );
 }

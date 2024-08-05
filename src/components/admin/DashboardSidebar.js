@@ -9,7 +9,6 @@ const DashboardSidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
   const navigate = useNavigate();
   const location = useLocation();
-=======
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './DashboardSidebar.css';
@@ -17,7 +16,6 @@ import profilePic from '../img/onur.png'; // Profil resmini ekleyin
 
 const DashboardSidebar = () => {
   const navigate = useNavigate();
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
 
   const handleLogout = () => {
     localStorage.removeItem('user');
@@ -43,10 +41,8 @@ const DashboardSidebar = () => {
 
   return (
     <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
-=======
   return (
     <div className="sidebar">
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
       <div className="profile">
         <img src={profilePic} alt="Profile" />
         <h3>{user ? `${user.first_name} ${user.last_name}` : ''}</h3>
@@ -71,7 +67,6 @@ const DashboardSidebar = () => {
           <li className="logout" onClick={handleLogout}>Çıkış Yap</li>
         </ul>
       )}
-=======
       <div className="sidebar-header">
         <h2>Menu</h2>
       </div>
@@ -89,7 +84,6 @@ const DashboardSidebar = () => {
         <li onClick={() => navigate('/dashboard/add-manager')}>Müdür</li>
         <li className="logout" onClick={handleLogout}>Çıkış Yap</li>
       </ul>
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
     </div>
   );
 };

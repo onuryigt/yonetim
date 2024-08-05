@@ -111,7 +111,6 @@ const Dashboard = () => {
           },
         ],
       });
-=======
 import DashboardSidebar from './DashboardSidebar';
 import './Dashboard.css';
 
@@ -183,7 +182,6 @@ const Dashboard = () => {
         operations[business.id] = latestOperation ? latestOperation.pos_revenue : 'Veri yok';
       }
       setCashOperations(operations);
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
     } catch (error) {
       console.error('Error fetching all cash operations:', error);
     }
@@ -198,18 +196,14 @@ const Dashboard = () => {
       if (card === 'eleman') {
         fetchEmployeeCountsByBusiness();
       }
-=======
       handleFetchAllCashOperations();
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
     }
   };
 
   const handleBusinessClick = (managerId) => {
 <<<<<<< HEAD
     setSelectedBusiness(managerId);
-=======
     handleFetchLatestCashOperation(managerId);
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
   };
 
   return (
@@ -220,7 +214,6 @@ const Dashboard = () => {
         <div className="cards-container">
           <div className={`card ciro ${expandedCard === 'ciro' ? 'expanded' : ''}`} onClick={() => handleExpandCard('ciro')}>
             <h2 style={{ color: 'white', fontWeight: 'bold' }}>En Son Ciro</h2>
-=======
       <DashboardSidebar />
       <div className="dashboard-content">
         <h1>Dashboard</h1>
@@ -230,14 +223,12 @@ const Dashboard = () => {
             onClick={() => handleExpandCard('ciro')}
           >
             <h2>Ciro</h2>
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
             {expandedCard === 'ciro' ? (
               <div className="expanded-content">
                 <div className="business-list">
                   {businesses.map((business) => (
 <<<<<<< HEAD
                     <button key={business.id} className={`business-button ${selectedBusiness === business.id ? 'selected' : ''}`} onClick={(e) => { e.stopPropagation(); handleBusinessClick(business.id); }}>
-=======
                     <button
                       key={business.id}
                       className={`business-button ${
@@ -248,7 +239,6 @@ const Dashboard = () => {
                         handleBusinessClick(business.id);
                       }}
                     >
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
                       {business.business_name}
                     </button>
                   ))}
@@ -258,11 +248,9 @@ const Dashboard = () => {
                     {businesses.map((business) => (
 <<<<<<< HEAD
                       <p key={business.id}>{business.business_name} POS Ciro: {cashOperations[business.id] !== undefined ? cashOperations[business.id] : 0}</p>
-=======
                       <p key={business.id}>
                         {business.business_name} POS Ciro: {cashOperations[business.id]}
                       </p>
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
                     ))}
                   </div>
                 ) : (
@@ -309,7 +297,6 @@ const Dashboard = () => {
               </div>
             ) : (
               <p style={{ color: 'white', fontWeight: 'bold' }}>Aylık Ortalama POS Ciro: {monthlyAverage}</p>
-=======
               </div>
             ) : (
               <div className="rotating-ciro">
@@ -348,7 +335,6 @@ const Dashboard = () => {
               <div className="expanded-content">
                 {/* Gün sonu ortalaması detayları burada */}
               </div>
->>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
             )}
           </div>
         </div>
