@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+<<<<<<< HEAD
  
+=======
+import DashboardSidebar from './DashboardSidebar';
+>>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -82,6 +86,10 @@ const MaasRapor = () => {
 
   return (
     <div className="maas-rapor-container">
+<<<<<<< HEAD
+=======
+      <DashboardSidebar />
+>>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
       <div className="maas-rapor-content">
         <h1>Maaş Raporu</h1>
         <div className="filter-section">

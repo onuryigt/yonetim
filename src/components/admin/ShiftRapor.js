@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+<<<<<<< HEAD
  
+=======
+import DashboardSidebar from './DashboardSidebar';
+>>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
 import './ShiftRapor.css';
 
 const ShiftRapor = () => {
@@ -8,6 +12,10 @@ const ShiftRapor = () => {
   const [shifts, setShifts] = useState([]);
   const [selectedBusiness, setSelectedBusiness] = useState('');
   const [selectedWeek, setSelectedWeek] = useState('');
+<<<<<<< HEAD
+=======
+  const [weekDetails, setWeekDetails] = useState([]);
+>>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
 
   const daysInTurkish = {
     monday: 'Pazartesi',
@@ -76,6 +84,7 @@ const ShiftRapor = () => {
     }
   };
 
+<<<<<<< HEAD
   // Benzersiz çalışanları al
   const uniqueEmployees = Array.from(new Set(shifts.map(shift => shift.employee_id)))
     .map(id => {
@@ -84,6 +93,11 @@ const ShiftRapor = () => {
 
   return (
     <div className="shift-rapor-container">
+=======
+  return (
+    <div className="shift-rapor-container">
+      <DashboardSidebar />
+>>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
       <div className="shift-rapor-content">
         <h1>Shift Raporu</h1>
         <div className="filter-section">
@@ -124,10 +138,17 @@ const ShiftRapor = () => {
               </tr>
             </thead>
             <tbody>
+<<<<<<< HEAD
               {uniqueEmployees.length > 0 &&
                 uniqueEmployees.map((employee) => (
                   <tr key={employee.employee_id}>
                     <td>{employee.employee_name}</td>
+=======
+              {shifts.length > 0 &&
+                businesses.map((business) => (
+                  <tr key={business.id}>
+                    <td>{business.employee_name}</td>
+>>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
                     {Object.keys(daysInTurkish).map((day) => (
                       <td key={day}>
                         {shifts
@@ -135,7 +156,11 @@ const ShiftRapor = () => {
                             (shift) =>
                               shift.shift_time === selectedWeek &&
                               shift.day === day &&
+<<<<<<< HEAD
                               shift.employee_id === employee.employee_id
+=======
+                              shift.employee_id === business.employee_id
+>>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
                           )
                           .map((shift) => (
                             <div

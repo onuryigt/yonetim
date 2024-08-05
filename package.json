@@ -13,7 +13,10 @@
     "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
     "chart.js": "^4.4.3",
+<<<<<<< HEAD
     "chartjs-plugin-datalabels": "^2.2.0",
+=======
+>>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
     "date-fns": "^3.6.0",
     "dayjs": "^1.11.12",
     "jspdf": "^2.5.1",
@@ -24,7 +27,10 @@
     "react-chartjs-2": "^5.2.0",
     "react-datepicker": "^7.3.0",
     "react-dom": "^18.3.1",
+<<<<<<< HEAD
     "react-icons": "^5.2.1",
+=======
+>>>>>>> 7c6f6c8d43779df8e8dbf0480c87948c882aea2f
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.25.1",
     "react-scripts": "5.0.1",
