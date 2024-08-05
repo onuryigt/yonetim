@@ -3,9 +3,6 @@ import { Container, Typography, TextField, Button, FormControl, MenuItem, Select
 import { Bar } from 'react-chartjs-2';
 import axios from 'axios';
 import 'chart.js/auto';
-<<<<<<< HEAD
-  // DashboardSidebar bileşenini ekledik
-import DashboardSidebar from './DashboardSidebar'; // DashboardSidebar bileşenini ekledik
 
 const CiroRapor = () => {
   const [startDate, setStartDate] = useState('');
@@ -62,9 +59,7 @@ const CiroRapor = () => {
 
   const filterAndMapData = () => {
     if (!data || !Array.isArray(data)) return [];
-<<<<<<< HEAD
   
-
     const filteredData = data.filter((item) => {
       const itemDate = new Date(item.date);
       const isWithinDateRange =
@@ -74,21 +69,16 @@ const CiroRapor = () => {
         !selectedBusiness || item.manager_id === parseInt(selectedBusiness);
       return isWithinDateRange && isWithinBusiness;
     });
-<<<<<<< HEAD
   
-
     const groupedData = filteredData.reduce((acc, item) => {
       const date = item.date.split('T')[0]; // Sadece tarihi alın
       if (!acc[date]) acc[date] = {};
       acc[date][item.manager_id] = item[selectedMetric];
       return acc;
     }, {});
-<<<<<<< HEAD
   
     // Tarihleri sıralayın ve doğru şekilde formatlayın
     const labels = Object.keys(groupedData).sort((a, b) => new Date(a) - new Date(b));
-
-    const labels = Object.keys(groupedData);
     const datasets = managers.map((manager) => ({
       label: manager.business_name,
       data: labels.map((date) => groupedData[date][manager.id] || 0),
@@ -96,7 +86,6 @@ const CiroRapor = () => {
       borderColor: manager.id === 1 ? 'rgba(75,192,192,1)' : manager.id === 2 ? 'rgba(255,99,132,1)' : 'rgba(54,162,235,1)',
       borderWidth: 1,
     }));
-<<<<<<< HEAD
   
     console.log('Labels:', labels); // Ekleyin
     console.log('Datasets:', datasets); // Ekleyin
@@ -104,10 +93,6 @@ const CiroRapor = () => {
     return { labels, datasets };
   };
   
-
-    return { labels, datasets };
-  };
-
   const handleGenerateChart = () => {
     const { labels, datasets } = filterAndMapData();
     setChartData({
@@ -115,15 +100,10 @@ const CiroRapor = () => {
       datasets,
     });
   };
-<<<<<<< HEAD
   
   // Component render kısmı
   return (
     <div style={{ display: 'flex' }}>
-
-  return (
-    <div style={{ display: 'flex' }}>
-      <DashboardSidebar /> {/* DashboardSidebar'ı burada kullanıyoruz */}
       <Container style={{ marginLeft: '240px' }}>
         <Typography variant="h4" gutterBottom>
           Ciro Raporu

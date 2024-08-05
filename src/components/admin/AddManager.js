@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Typography, Button, TextField, Grid, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 import axios from 'axios';
-<<<<<<< HEAD
-
-import DashboardSidebar from './DashboardSidebar'; // DashboardSidebar bileşenini ekleyelim
 
 const AddManager = () => {
   const [formData, setFormData] = useState({
@@ -57,8 +54,6 @@ const AddManager = () => {
 
   return (
     <div style={{ display: 'flex' }}>
-<<<<<<< HEAD
-      <DashboardSidebar />
       <Container maxWidth="md" style={{ marginLeft: '240px' }}>
         <Typography variant="h4" gutterBottom>
           Müdür Ekle

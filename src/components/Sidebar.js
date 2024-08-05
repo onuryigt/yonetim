@@ -11,6 +11,97 @@ const Sidebar = () => {
         window.location.href = '/login';
     };
 
+ React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Sidebar.css'; 
+
+const Sidebar = () => {
+    const navigate = useNavigate();
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    const handleLogout = () => {
+        localStorage.removeItem('user');
+        window.location.href = '/login';
+    };
+
+ React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Sidebar.css'; 
+
+const Sidebar = () => {
+    const navigate = useNavigate();
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    const handleLogout = () => {
+        localStorage.removeItem('user');
+        window.location.href = '/login';
+    };
+
+ React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Sidebar.css'; 
+
+const Sidebar = () => {
+    const navigate = useNavigate();
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    const handleLogout = () => {
+        localStorage.removeItem('user');
+        window.location.href = '/login';
+    };
+
+ React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Sidebar.css'; 
+
+const Sidebar = () => {
+    const navigate = useNavigate();
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    const handleLogout = () => {
+        localStorage.removeItem('user');
+        window.location.href = '/login';
+    };
+
+ React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Sidebar.css'; 
+
+const Sidebar = () => {
+    const navigate = useNavigate();
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    const handleLogout = () => {
+        localStorage.removeItem('user');
+        window.location.href = '/login';
+    };
+
+ React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Sidebar.css'; 
+
+const Sidebar = () => {
+    const navigate = useNavigate();
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    const handleLogout = () => {
+        localStorage.removeItem('user');
+        window.location.href = '/login';
+    };
+
+ React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Sidebar.css'; 
+
+const Sidebar = () => {
+    const navigate = useNavigate();
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    const handleLogout = () => {
+        localStorage.removeItem('user');
+        window.location.href = '/login';
+    };
+
 <<<<<<< HEAD
     
 

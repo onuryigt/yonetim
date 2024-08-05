@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-<<<<<<< HEAD
  
-import DashboardSidebar from './DashboardSidebar';
 import './Elemanlar.css';
 
 const Elemanlar = () => {
@@ -72,8 +70,6 @@ const Elemanlar = () => {
 
   return (
     <div className="elemanlar-container">
-<<<<<<< HEAD
-      <DashboardSidebar />
       <div className="elemanlar-content">
         <h1>Elemanlar</h1>
         <div className="filter-section">

@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-<<<<<<< HEAD
  
-import DashboardSidebar from './DashboardSidebar';
 import './StockReport.css';
 
 const StockReport = () => {
@@ -38,8 +36,6 @@ const StockReport = () => {
 
     return (
         <div className="stock-report-container">
-<<<<<<< HEAD
-            <DashboardSidebar />
             <div className="stock-report-content">
                 <h1>Stok Raporu</h1>
                 <div className="filter-section">

@@ -137,8 +137,6 @@ const EmployeeOperations = () => {
               <TableCell>Soyisim</TableCell>
               <TableCell>Telefon</TableCell>
               <TableCell>Görev</TableCell>
-<<<<<<< HEAD
-              <TableCell>Saatlik Ücret</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -148,8 +146,6 @@ const EmployeeOperations = () => {
                 <TableCell>{employee.last_name}</TableCell>
                 <TableCell>{employee.phone}</TableCell>
                 <TableCell>{employee.role}</TableCell>
-<<<<<<< HEAD
-                <TableCell>{employee.hour_price}</TableCell>
               </TableRow>
             ))}
           </TableBody>

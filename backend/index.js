@@ -17,9 +17,7 @@ app.use(bodyParser.json());
 app.use(express.static('uploads'));
 
 const db = mysql.createConnection({
-<<<<<<< HEAD
   host: '92.112.193.81',
-  host: '92.112.193.811',
   user: 'root',
   password: 'Onur12404545?',
   database: 'restaurant_management',
@@ -300,7 +298,6 @@ app.get('/api/cash-operations', (req, res) => {
       console.error('Error fetching cash operations:', err);
       res.status(500).json({ success: false, message: 'Error fetching cash operations' });
     } else {
-<<<<<<< HEAD
       // Tarihleri doğru formatta döndür
       const formattedResults = results.map(item => {
         return {
@@ -309,13 +306,10 @@ app.get('/api/cash-operations', (req, res) => {
         };
       });
       res.json({ success: true, data: formattedResults });
-      res.json({ success: true, data: results });
     }
   });
 });
 
-
-<<<<<<< HEAD
 
 app.post('/add-manager', (req, res) => {
   const { first_name, last_name, email, password, business_name } = req.body;
@@ -381,23 +375,18 @@ app.get('/api/shifts', (req, res) => {
 
   let query = `
     SELECT 
-<<<<<<< HEAD
       shifts.id, 
       employees.first_name AS employee_name, 
       shifts.day, 
       shifts.shift, 
       shifts.shift_time, 
       shifts.employee_id 
-      shifts.id, employees.first_name AS employee_name, shifts.day, shifts.shift, shifts.shift_time 
     FROM 
       shifts 
     JOIN 
       employees ON shifts.employee_id = employees.id 
     WHERE 
-<<<<<<< HEAD
       shifts.manager_id = ?`;
-      shifts.manager_id = ?
-  `;
 
   const queryParams = [managerId];
 
@@ -578,7 +567,6 @@ app.get('/api/get-salary-details', (req, res) => {
   });
 });
 
-<<<<<<< HEAD
 app.get('/api/employee-count', (req, res) => {
   const query = 'SELECT COUNT(*) as count FROM employees';
   db.query(query, (err, results) => {

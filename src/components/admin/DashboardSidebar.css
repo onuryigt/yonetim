@@ -1,6 +1,5 @@
 /* Sidebar container */
 .sidebar {
-<<<<<<< HEAD
   height: 100vh;
   width: 250px;
   position: fixed;
@@ -77,77 +76,3 @@
 .sidebar ul li.logout:hover {
   background-color: #c82333;
 }
-    height: 100vh;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #343a40;
-    padding-top: 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Sidebar header */
-  .sidebar-header {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-  }
-  
-  /* Sidebar menu */
-  .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
-  }
-  
-  /* Sidebar menu item */
-  .sidebar ul li {
-    padding: 15px;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s;
-  }
-  
-  .sidebar ul li:hover {
-    background-color: #495057;
-  }
-  
-  .sidebar ul li.active {
-    background-color: #495057;
-  }
-  
-  /* Logout button */
-  .sidebar ul li.logout {
-    margin-top: auto;
-    background-color: #dc3545;
-  }
-  
-  .sidebar ul li.logout:hover {
-    background-color: #c82333;
-  }
-  
-  /* Profile picture */
-  .sidebar .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .sidebar .profile img {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-  
-  .sidebar .profile h3 {
-    margin: 0;
-    font-size: 1.2em;
-    text-align: center;
-  }
